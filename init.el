@@ -30,6 +30,7 @@
 
 ;;w3m配置项（用于上网）
 (add-to-list 'load-path "C:/Users/heu/AppData/Roaming/.emacs.d/w3m-lisp") ;;w3m所需要的lisp文件，所在路径
+(add-to-list 'load-path "~/.emacs.d/w3m-lisp") ;;w3m所需要的lisp文件，所在路径
 (add-to-list 'exec-path "c:/emacs-24.3/w3m") ;;指定w3m可执行程序，所在的执行路径
 (require 'w3m-load)
 (setq w3m-use-favicon nil)
@@ -38,6 +39,7 @@
 (setq w3m-home-page "http://www.baidu.com")
 
 (add-to-list 'load-path "C:/Users/heu/AppData/Roaming/.emacs.d/lisp") 
+(add-to-list 'load-path "~/.emacs.d/lisp") 
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-midnight)
@@ -52,3 +54,5 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+(server-start)
