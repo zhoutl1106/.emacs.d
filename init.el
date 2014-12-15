@@ -56,3 +56,10 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 (server-start)
+;;Setting Font
+(set-face-attribute
+ 'default nil :font "YaHei Consolas Hybrid 14")
+(dolist (charset '(kana han symbol cjk-misc bopomofo))
+(set-fontset-font (frame-parameter nil 'font')
+charset
+(font-spec :family "YaHei Consolas Hybrid" :size 14")))
