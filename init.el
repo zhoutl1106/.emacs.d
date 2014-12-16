@@ -60,6 +60,6 @@
 (set-face-attribute
  'default nil :font "YaHei Consolas Hybrid 14")
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
-(set-fontset-font (frame-parameter nil 'font')
+(set-fontset-font (frame-parameter nil 'font)
 charset
-(font-spec :family "YaHei Consolas Hybrid" :size 14")))
+(font-spec :family "YaHei Consolas Hybrid" :size 14)))
