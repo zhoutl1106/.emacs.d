@@ -55,7 +55,6 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-(server-start)
 ;;Setting Font
 (set-face-attribute
  'default nil :font "YaHei Consolas Hybrid 14")
